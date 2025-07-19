@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap" rel="stylesheet">
+    </head>
+    <body>
+         <div class="container">
+            <div class="calc-box">
+               <input id="display" readonly> 
+            </div>
+            <div class="calc-btn">
+                <div>
+                    <button class="other-btn" onclick="clearDisplay()">DEL</button>
+                    <button class="other-btn" onclick="deleteLastChar()">AC</button>
+                    <button class="other-btn" onclick="appendToDisplay('.')">.</button>
+                    <button id="btn-color" onclick="appendToDisplay('/')">/</button>
+                </div>
+                <div>
+                    <button class="num" onclick="appendToDisplay('7')">7</button>
+                    <button class="num" onclick="appendToDisplay('8')">8</button>
+                    <button class="num" onclick="appendToDisplay('9')">9</button>
+                    <button id="btn-color" onclick="appendToDisplay('×')">×</button>
+                </div>
+                <div>
+                    <button class="num" onclick="appendToDisplay('4')">4</button>
+                    <button class="num" onclick="appendToDisplay('5')">5</button>
+                    <button class="num" onclick="appendToDisplay('6')">6</button>
+                    <button id="btn-color" onclick="appendToDisplay('-')">-</button>
+                </div>
+                <div>
+                    <button class="num" onclick="appendToDisplay('1')">1</button>
+                    <button class="num" onclick="appendToDisplay('2')">2</button>
+                    <button class="num" onclick="appendToDisplay('3')">3</button>
+                    <button id="btn-color" onclick="appendToDisplay('+')">+</button>
+                </div>
+                <div class="last-row">
+                    <button class="num" onclick="appendToDisplay('0')">0</button>
+                    <button id="btn-color" onclick="result()">=</button>
+                </div>
+                
+            </div>
+         </div>
+    </body>
+</html>
